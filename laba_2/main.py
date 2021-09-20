@@ -16,11 +16,11 @@ def main():
     print()
 
     data = [
-            [r.get_name, N, N, '-', r.color],
-            [c.get_name, '-', '-', N, c.color],
-            [s.get_name, N, N, '-', s.color]
+            [r.get_name, N, N, '-', r.color, f"{r.square():.2f}"],
+            [c.get_name, '-', '-', N, c.color, f"{c.square():.2f}"],
+            [s.get_name, N, N, '-', s.color, f"{s.square():.2f}"]
     ]
-    columns = ["Фигура", "Ширина", "Высота", "Радиус", "Цвет"]
+    columns = ["Фигура", "Ширина", "Высота", "Радиус", "Цвет", "Площадь"]
 
     tab = pd.DataFrame(data, columns=columns)
     print(tab)
