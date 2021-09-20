@@ -16,7 +16,7 @@ class Circle(Figure):
         return pi * self.radius ** 2
 
     def __repr__(self):
-        return f"{self.color} {self.NAME} с радиусом {self.radius} имеет площадь {self.square()}"
+        return f"{self.color} {self.NAME} с радиусом {self.radius} имеет площадь {self.square():.2f}"
 
     @property
     def get_name(self):
