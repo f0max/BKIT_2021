@@ -1,2 +1,1 @@
-print("*** Package initialization ***")
-print()
+print("*** Package initialization ***\n")
