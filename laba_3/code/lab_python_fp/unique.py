@@ -19,9 +19,8 @@ class Unique(object):
                 raise
             else:
                 if self.ignore_case and isinstance(curr, str):
-                    tmp = curr[:]
-                    if tmp.lower() not in self.used_elements:
-                        self.used_elements.add(tmp.lower())
+                    if curr.lower() not in self.used_elements:
+                        self.used_elements.add(curr.lower())
                         return curr
                 elif curr not in self.used_elements:
                     self.used_elements.add(curr)
