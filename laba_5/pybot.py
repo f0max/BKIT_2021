@@ -4,7 +4,7 @@ import telebot as tb
 from bs4 import BeautifulSoup as BS
 import requests
 
-TOKEN = "***"
+TOKEN = "YOUR:own_private_secure-Bot_token"
 URL = "https://coinmarketcap.com/currencies/"
 HELLO = "Let's start"
 HELP = "Just choose the crypto you wanna to see the price of"
